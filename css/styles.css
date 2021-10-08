@@ -1,0 +1,925 @@
+@font-face {
+  font-family: IranSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/IRANSansWeb.eot');
+  src: url('../fonts/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('../fonts/IRANSansWeb.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../fonts/IRANSansWeb.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/IRANSansWeb.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IranSansBold;
+  font-weight: bold;
+  src: url('../fonts/IRANSans_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: IranSansBlack;
+  font-weight: bold;
+  src: url('../fonts/IRANSans_Black.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+input, button, select, option {
+  font-family: IranSans;
+}
+
+body {
+  background: linear-gradient(180deg, #fff, #f4f2f9);
+  font-family: IranSans;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url('../img/header.png') no-repeat center center/cover;
+  overflow: hidden;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.9rem 12rem;
+  position: relative;
+}
+
+header nav .logo {
+  position: absolute;
+  left: 49%;
+  top: 2.3rem;
+  transform: translateX(-50%);
+}
+
+header nav .logo img {
+  width: 100px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin: 0 .5rem;
+  padding: .8rem 2rem;
+  font-size: 15.5px;
+  font-family: IranSans;
+  font-weight: 600;
+}
+
+header nav ul li a {
+  color: #fefdfd;
+}
+
+header nav ul .signup-nav {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: .8rem 4rem;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+header nav ul .signup-nav:hover {
+  background: #334e68;
+  border-color: #2186eb;
+}
+/* end of nav and menu */
+
+header .welcome {
+  width: 400px;
+  position: relative;
+  top: 20%;
+  -webkit-animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+header .welcome h1 {
+  direction: rtl;
+  text-align: center;
+  font-size: 32px;
+  font-family: IranSansBlack;
+  color: rgb(253, 249, 249);
+}
+
+header .welcome span {
+  color: #334e68;
+}
+
+@keyframes slide-right {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 4rem 10rem;
+}
+
+.steps-section .steps {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps-section .steps .installation-step {
+  width: 370px;
+  height: 320px;
+  margin: 0 1rem;
+  direction: rtl;
+  position: relative;
+  padding: 1.2rem 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all .7s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.steps-section .steps .installation-step .step-no {
+  font-size: 150px;
+  position: absolute;
+  top: -12px;
+  right: 30px;
+  user-select: none;
+  color: #e7e8ec;
+  z-index: -1;
+}
+
+.steps-section .steps .installation-step .step-content {
+  width: 100%;
+  padding: 6.2rem 2rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps-section .steps .installation-step:first-child .step-content svg {
+  width: 4.5rem;
+  margin-right: 5rem;
+}
+
+.steps-section .steps .installation-step .step-content svg {
+  width: 4.5rem;
+  margin-right: 7.5rem;
+}
+
+.steps-section .steps .installation-step .step-content h2 {
+  margin-top: 1rem;
+  font-family: IranSansBold;
+  font-weight: 800;
+  font-size: 23px;
+  color: #334e68;
+}
+
+.steps-section .steps .installation-step .step-content h2 span {
+  color: #2186eb;
+}
+
+.steps-section .steps .installation-step .step-content p {
+  margin-top: 3rem;
+  font-size: 15px;
+  color: #627d98;
+}
+
+.shadowVisible {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.general-section {
+  margin: 14rem 0 7.5rem 0;
+  width: 100%;
+}
+
+.video-section {
+  margin-top: 7.5rem;
+  position: relative;
+}
+
+.title {
+  direction: rtl;
+  font-size: 32px;
+  text-align: center;
+  font-family: IranSansBold;
+  font-weight: 800;
+  color: #334e68;
+}
+
+.title span {
+  color: #2186eb;
+}
+
+.video-section .video-container {
+  margin: auto;
+  background: #367fc5d8;
+  position: relative;
+  width: 960px;
+  padding: 3rem;
+  border-radius: 12px;
+  margin-top: 5rem;
+}
+
+.video-section .video-container .video-preview {
+  width: 840px;
+  margin: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: 12px;
+  opacity: .5;
+}
+
+.video-section .video-container a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-section .video-container a img {
+  width: 90px;
+	-webkit-animation: playButton .7s infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: playButton .7s infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.video-section:before {
+  width: 100%;
+  content: "";
+  background: url('../img/wave.png') no-repeat bottom left/cover;
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.popularity-section {
+  position: relative;
+  height: 640px;
+}
+
+.popularity-section:before {
+  width: 100%;
+  content: "";
+  background: url('../img/wave_reverse.png') no-repeat bottom left/cover;
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;
+  z-index: -2;
+}
+
+/* اسلایدر */
+.slider-container {
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.slider-container .slider-items {
+  width: 100%;
+  height: 100%;
+  transition: margin 0.7s ease-out;
+}
+
+.slider-container .slider-items .slider-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
+  display: flex;
+}
+
+.slider-container .slider-items .slider-item .testimonial {
+  position: relative;
+  top: 40%;
+}
+
+.slider-container .slider-items .slider-item .testimonial p {
+  width: 70%;
+  color: #627d98;
+  font-size: 17px;
+  direction: rtl;
+  text-align: justify;
+}
+
+.slider-container .slider-items .slider-item .testimonial p:after {
+  content: "";
+  width: 36px;
+  background: url('../img/quote-right.png') no-repeat center center/cover;
+  height: 33px;
+  position: absolute;
+  top: -2rem;
+  right: 21%;
+}
+
+.slider-container .slider-items .slider-item .slide-image {
+  background: url('../img/testimonial-1.png') no-repeat center center/contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.slider-container .slider-items .slider-item .slide-image2 {
+  background: url('../img/testimonial-2.png') no-repeat center center/contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.prev-slide {
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  left: 38%;
+  top: 73%;
+  cursor: pointer;
+}
+
+.next-slide {
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  left: 43%;
+  top: 73%;
+  cursor: pointer;
+}
+
+.slider-container .slider-items .slider-item .quote-by {
+  width: 70%;
+  text-align: right;
+  margin-top: 3.2rem;
+  font-family: IranSansBold;
+  font-weight: 800;
+  color: #334e68;
+  line-height: 2;
+  font-size: 17px;
+}
+
+.slider-container .slider-items .slider-item .quote-by h2 {
+  font-size: 20px;
+  color: #2186eb;
+}
+/* اسلایدر */
+
+.app-view-section .app-view-pictures {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-view-section .app-view-pictures img {
+  width: 200px;
+  margin: 0 2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all .7s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.app-view-section .app-view-pictures .app-view-middle-picture {
+  height: 430px;
+  transform: scale(1.1);
+  box-shadow: none!important;
+}
+
+.app-view-section .app-view-pictures img:first-child, 
+.app-view-section .app-view-pictures img:last-child {
+  opacity: .5;
+}
+
+.app-view-section .app-view-pictures img:nth-child(2), 
+.app-view-section .app-view-pictures img:nth-child(4) {
+  opacity: .75;
+}
+
+.img-clicked {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  opacity: 1!important;
+}
+
+.faq-section {
+  direction: rtl;
+  position: relative;
+}
+
+.faq-section:before {
+  width: 100%;
+  content: "";
+  background: url('../img/wave&watch.png') no-repeat bottom left/cover;
+  height: 500px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.faq-section .accordion {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 6rem 8rem;
+  direction: rtl;
+}
+
+.faq-section .accordion .question {
+  width: 640px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 2rem 3rem;
+  margin: .5rem 0;
+  font-size: 17px;
+  overflow: hidden;
+  max-height: 65px;
+  transition: all .5s ease-out;
+  user-select: none;
+  color: #627d98;
+}
+
+.faq-section .accordion .question h4 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 4rem;
+  font-family: IranSansBold;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.faq-section .accordion .question i {
+  transition: .4s ease-in-out;
+}
+
+.question-title-active {
+  color: #2186eb!important;
+}
+
+.question-title-active i {
+  transform: rotate(-90deg);
+}
+
+.faq-section .accordion .question-open {
+  max-height: 320px;
+  transition: all 1s ease-in-out;
+}
+
+.subscribe-section {
+  width: 100%;
+  height: 410px;
+  background: url('../img/subscribe.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+.subscribe-section p {
+  margin: auto;
+  text-align: center;
+  color: #fafafa;
+  font-size: 16.5px;
+  margin-top: 2rem;
+  width: 46%;
+  direction: rtl;
+}
+
+.subscribe-section .subscribe-input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.subscribe-section .subscribe-input-container .subscribe-input {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 1.3rem 2rem;
+  position: relative;
+}
+
+.subscribe-section .subscribe-input-container .subscribe-input input {
+  border: none;
+  outline: none;
+  width: 75%;
+  padding-left: 1rem;
+  color: #627d98;
+}
+
+.subscribe-section .subscribe-input-container .subscribe-input button {
+  background: #2186eb;
+  border-radius: 50px;
+  width: 25%;
+  margin-right: .3rem;
+  padding: 1rem 2rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.pricing-section p, .contact-us-section p {
+  text-align: center;
+  font-size: 17px;
+  direction: rtl;
+  margin-top: 3rem;
+  color: #627d98;
+}
+
+.pricing-section .pricing {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.pricing-section .pricing .pricing-plan {
+  display: flex;
+  margin: 0 1rem;
+  flex-direction: column;
+  padding: 4rem 3rem 5rem 4.5rem;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  transition: all .3s cubic-bezier(.34,.3,.76,.7);
+  user-select: none;
+}
+
+.pricing-section .pricing .pricing-plan h3 {
+  color: #2186eb;
+  background: #e6f6ff;
+  padding: .6rem 3rem;
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+  border-radius: 50px;
+}
+
+.pricing-section .pricing .pricing-plan h4 {
+  color: #2186eb;
+  font-family: IranSansBlack;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 2.5rem;
+  direction: rtl;
+}
+
+.pricing-section .pricing .pricing-plan h5 {
+  color: #627d98;
+  font-size: 12px;
+}
+
+.pricing-section .pricing .pricing-plan p {
+  font-size: 14.5px;
+  border-bottom: 1px solid #e6efff;
+  padding-bottom: 3rem;
+}
+
+.pricing-section .pricing .pricing-plan .pricing-plan-details {
+  margin-top: 2rem;
+  direction: rtl;
+}
+
+.pricing-section .pricing .pricing-plan .pricing-plan-details ul li {
+  margin: 1rem 0;
+  font-size: 15px;
+  color: #627d98;
+}
+
+.pricing-section .pricing .pricing-plan .pricing-plan-details ul li span {
+  font-family: IranSansBold;
+  font-weight: 800;
+  font-size: 18px;
+  color: #627d98;
+  margin-left: .6rem;
+}
+
+.pricing-section .pricing .pricing-plan button, .view-all-btn {
+  background: #fff;
+  color: #2186eb;
+  border-radius: 50px;
+  padding: 1rem 4rem;
+  border: 2px solid #2186eb!important;
+  margin-top: 2rem;
+  font-size: 16px;
+  font-family: IranSansBold;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.view-all-btn {
+  color: #fff;
+  background: #2186eb;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 7rem;
+}
+
+.plan-active {
+  box-shadow: 
+  5px 5px 8px #2186eb48, 
+  -5px -6px 7px #2186eb48;
+  background: #2186eb!important;
+
+}
+
+.plan-active p, .plan-active h4, .plan-active ul li span {
+  color: #fafafa!important;
+}
+
+.plan-active ul li, .plan-active h5 {
+  color: #f0f7fe!important;
+}
+
+.contact-us-section {
+  background: #fff;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.contact-us-section .contact-us {
+  width: 100%;
+  padding: 4rem;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-section .contact-us .contact-us-report, .contact-us-section .contact-us .contact-information {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-us-section .contact-us .contact-us-report .report-input {
+  width: 240px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: .7rem 1.2rem;
+  position: relative;
+  margin: 0 1rem;
+  border: 2px solid #2186eb;
+}
+
+.contact-us-section .contact-us .contact-us-report .report-input input,
+.contact-us-section .contact-us .contact-us-report .report-input select {
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+}
+
+.contact-us-section .contact-us .contact-us-report .report-input select {
+  direction: rtl;
+  color: #2186eb;
+  text-align: center!important;
+  width: 100%;
+}
+
+.contact-us-section .contact-us .contact-us-report .send-report {
+  border-radius: 50px;
+  padding: 1.1rem 4rem;
+  border: 1px solid #2186eb!important;
+  font-size: 16px;
+  font-family: IranSansBold;
+  font-weight: 800;
+  cursor: pointer;
+  color: #fff;
+  background: #2186eb;
+  margin-left: 1rem;
+}
+
+.contact-us-section .contact-us .contact-us-report .report-input input::placeholder,
+.subscribe-section .subscribe-input-container .subscribe-input input::placeholder {
+  color: #2186eb;
+  opacity: .9;
+}
+
+.contact-us-section .contact-us .contact-information {
+  margin-top: 4rem;
+}
+
+.contact-us-section .contact-us .contact-information div {
+  margin: 0 3rem;
+  display: flex;
+  color: #2186eb;
+}
+
+.contact-us-section .contact-us .contact-information div:last-child {
+  margin-right: 0;
+}
+
+.contact-us-section .contact-us .contact-information div a{
+  font-family: IranSansBold;
+  font-weight: 800;
+  font-size: 15px;
+  color: #2186eb;
+}
+
+.contact-us-section .contact-us .contact-information div i {
+  margin-right: 2rem;
+  font-size: 15px;
+}
+
+.location-section {
+  width: 100%;
+  position: relative;
+  height: 360px;
+}
+
+.location-section .location-section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url('../img/location.jpg') no-repeat center center/cover;
+  opacity: 0.93;
+  cursor: pointer;
+}
+
+.location-section iframe {
+  width: 100%;
+  height: 360px;
+  border: none;
+}
+
+.location-section .location-section-overlay button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  color: #2186eb;
+  outline: none;
+  border: 2px solid #2186eb;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.location-section .location-section-overlay:hover > button {
+  color: #fff;
+  background: #2186eb;
+}
+
+footer {
+  background: #0967d2;
+  width: 100%;
+  padding: 1rem 10rem;
+}
+
+footer .footer-main-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2f69ec;
+  padding-bottom: 2rem;
+}
+
+footer .footer-main-content .download-links {
+  display: flex;
+  align-items: center;
+  margin-left: 2.5rem;
+}
+
+footer .footer-main-content .links ul {
+  display: flex;
+  direction: rtl;
+}
+
+footer .footer-main-content .links ul li {
+  padding: 0 2.5rem;
+}
+
+footer .footer-main-content .links ul li a {
+  color: #e6f6ff;
+  font-size: 15px;
+  transition: all .5s ease;
+}
+
+footer .footer-main-content .links ul li a:hover {
+  color: #334e68;
+}
+
+footer .footer-credits {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2.5rem .5rem 2.5rem;
+}
+
+footer .footer-credits div, footer .footer-credits div ul {
+  display: flex;
+}
+
+footer .footer-credits div ul li,
+footer .footer-credits div ul li a,
+footer .footer-credits div a{
+  color: #e6f6ff;
+}
+
+footer .footer-credits .credits ul li {
+  padding: 0 1rem;
+  font-size: 14px;
+  color: #e6f6ff;
+}
+
+footer .footer-credits .credits ul li:first-child {
+  border-right: 1px solid #e6f6ff;
+}
+
+footer .footer-credits .credits ul li a {
+  color: #ddc73f;
+}
+
+footer .footer-credits .social-media {
+  font-size: 17px;
+}
+
+footer .footer-credits .social-media i {
+  margin: 1rem;
+  transition: all .5s ease;
+}
+
+footer .footer-credits .social-media i:hover {
+  color: #334e68;
+}
+
+footer .footer-credits .social-media a:last-child i {
+  margin-right: 0;
+}
+
+@keyframes playButton {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    
+  }
+}
